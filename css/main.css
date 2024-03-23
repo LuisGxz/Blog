@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700|Roboto+Slab:400,700|Roboto:400,500,700,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto Mono', monospace;
+
+}
+.body-index{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+}
+header{
+    width: 100%;
+    height: 140px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+header .header-icons-container{
+    width: 100%;
+    height: 50px;
+    display: grid;
+    background-color: #47cfac;
+}
+header .header-icons-container .icons{
+    width: 300px;
+    height: auto;
+    display: flex;
+    justify-items: flex-end;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: end;
+    margin-right: 50px;
+}
+header .header-icons-container .icons span{
+    color: white;
+}
+header nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90px;
+    padding: 0 50px 0 30px;
+}
+
+nav .nav-logo-container img{
+    width: 220px;
+    margin-top: 10px;
+}
+header nav .profile-link{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+nav .profile-link a{
+    color: black;
+    border-bottom: 1px solid black;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+main .background-main-image{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    background-image: url("../assets/Cover.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+main .background-main-image h1{
+    max-width: 900px;
+    padding: 0 30px;
+    align-self: center;
+    font-size: 3rem;
+    color: white;
+    letter-spacing: 1.2rem;
+}
+main .background-main-image button{
+    width: 100px;
+    height: 40px;
+    align-self: center;
+    margin-bottom: 220px;
+    background-color: #47cfac;
+    border: 1px solid white;
+    cursor: pointer;
+}
+main .background-main-image button a{
+    font-size: 1.4rem;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+}
+.blogs-main{
+    width: 100%;
+}
+.blogs-main-container{
+    width: 100%;
+    background-color: #DFE3E9;
+
+}
+.blogs-news-container{
+    max-width: 1100px;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px 0 50px;
+}
+.blogs-news-container h3{
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding-left: 30px;
+    align-items: center;
+}
+.blogs-main-new img{
+    width: 100%;
+    padding-right: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.blogs-news-info-container{
+    max-width: 350px;
+}
+.blogs-news-info-container h2{
+    font-size: 2.6rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.blogs-news-info-container p{
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+
+}
+.blogs-button{
+    max-width: 100px;
+    height: 40px;
+    padding: 10px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: center;
+    border: 2px solid #47cfac;
+}
+.blogs-posts-container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 0;  
+}
+.blogs-posts-container h3{
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.grid-post-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70px;
+    padding: 30px 40px 0;
+    border-top: 1px solid #333;
+    
+}
+.grid-post-container img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.post-container p{
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 25px;
+    
+}
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: #22272d;
+    border-top: 35px solid #47cfac;
+}
+footer p{
+    color: white;    
+    font-size: 1.4rem;
+    margin-top: 30px;
+    text-align: center;
+}
+/*-------------------------------------------------*/
+.main-blog{
+    width: 100%;
+}
+.main-blog .blogpost-image{
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.main-blog .blogpost-image img{
+    width: 100%;
+}
+.main-blog .blogpost-info{
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: 0 auto;
+
+}
+.main-blog .blogpost-info h2{
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 20px;
+    margin: 50px 0 40px;
+    border-bottom: 1px solid #333;
+}
+.main-blog .blogpost-info h1{
+    font-size: 4.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.main-blog .blogpost-info p{
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    line-height: 3rem;
+}
+.contact{
+    width: 100%;
+    height: auto;
+    margin-top: 80px;
+    background-color: #DFE3E9;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.contact img{
+    width: 120px;
+    margin-right: 30px;
+}
+.contact > div{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding: 70px 0;
+}
+.contact .contact-info p{
+    width: 300px;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.contact .contact-info p:first-child{
+    width: fit-content;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+/*-------------------------------------------------*/
+.main-profile{
+    width: 100%;
+}
+.main-profile .about-me{
+    width: 100%;
+    background-color: #DFE3E9;
+    padding: 50px 30px;
+}
+.main-profile .about-me .about-me-container{
+    max-width:1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.main-profile .about-me .about-me-container img{
+    max-width: 400px;
+    margin: 0 40px 0;
+}
+.main-profile .about-me .about-me-container h2{
+    font-size: 2.8rem;
+    margin: 30px 0;
+    font-weight: bold;
+}
+.main-profile .about-me .about-me-container p{
+    font-size: 1.8rem;
+}
+.main-proyects{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 30px;
+}
+.main-proyects h2{
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    font-size: 2.2rem;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+.main-proyects .main-proyects-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    font-size: 1.6rem;
+}
+.main-proyects .main-proyects-container p{
+    margin: 30px 0;
+}

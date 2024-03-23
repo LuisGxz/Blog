@@ -1,0 +1,53 @@
+
+@media  (max-width: 900px){
+    main .background-main-image h1{
+        font-size: 2.5rem;
+    }
+    
+    header nav{
+        padding-left: 0;
+    }
+    .grid-post-container{
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    .contact{
+        grid-template-columns: 1fr;
+    }
+    .contact > div{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .main-profile .about-me .about-me-container{
+        grid-template-columns: 1fr;
+    }
+    .main-proyects .main-proyects-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media  (max-width: 1100px){
+    .grid-container{
+        grid-template-columns: 1fr;
+    }
+    .blogs-news-info-container h2{
+        margin-top: 20px;
+    }
+    
+}
+@media  (max-width: 500px){
+    .grid-post-container{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .main-blog .blogpost-info p{
+        font-size: 1.6rem;
+    }
+    .main-proyects .main-proyects-container{
+        grid-template-columns: 1fr;
+    }
+    .main-profile .about-me .about-me-container img{
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+}
